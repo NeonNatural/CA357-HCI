@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #dddddd
+  /*background-color: #bcbcbc;*/
+}
+
+.nav{
+  background-color: rgba(52,73,94,0.7);
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 12;
+  height:50px;
+  box-shadow: 0px 2px 5px #b2b2b2;
+}
+.link ul {
+  text-align:right;
+}
+
+.link ul li{
+  margin: 0 auto;
+  display: inline;
+  font-size: 160%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 4%;
+
+}
+.link ul a{
+  text-decoration: none;
+}
+.container{
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+}
+
+.landing{
+  background-image: url('../imgs/yo.png');
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  box-shadow: 0px 10px 5px #aaaaaa;
+  background-attachment: fixed;
+}
+.name p{
+  background-color:black;
+  color:white;
+  display:inline-block;
+  padding:10px;
+}
+.name span{
+  text-align: center;
+  font-size: 150px;
+  color: black;
+  top: 35%;
+  position: relative;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-shadow: 0 8px 10px white;
+}
+.name {
+	text-align: center;
+	color:black;
+	top:20%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: relative;
+	bottom:1.5em;
+	text-shadow: 0px 8px 10px white;
+  font-size:120%;
+}
+
+.blurb p{
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-size: 25px;
+  width: 30%;
+  display:inline-block;
+  background-color: white;
+  padding:90px;
+  padding-left:100px;
+  padding-right: 100px;
+}
+.about{
+  background-color:black;
+  color:white;
+  display:inline-block;
+  padding:60px;
+  padding-left:100px;
+  padding-right: 100px;
+  box-shadow: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:100px;
+  float:left;
+  margin-left: 10%;
+}
+.container{
+  margin-top:20px;
+  background-color:white;
+  box-shadow: 0px 10px 5px #aaaaaa;
+  padding-bottom: 5px;
+}
+.login{
+  margin-top:20px;
+  margin-bottom:4%;
+}
+.login p{
+  background-color:black;
+  color:white;
+  display:inline-block;
+  padding:60px;
+  padding-left:100px;
+  padding-right: 100px;
+  box-shadow: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:100px;
+  float:left;
+  margin-left: 10%;
+}
+.info{
+  width: 500px;
+  height:360px;
+  text-align: center;
+  background-color: rgba(52,73,94,0.7);
+  border-radius: 4px;
+  display:inline-block;
+  margin-top: 6%;
+  margin-left: 180px;
+  box-shadow: 0px 10px 5px #aaaaaa;
+}
+.info img{
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom:30px;
+}
+input[type="text"],input[type="password"]{
+  height: 45px;
+  width: 300px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left:20px;
+}
+.btn-login{
+  padding-top:5px;
+  padding: 15px 20px;
+  margin-right: 5px;
+  width: 150px;
+  float:right;
+  text-align: center;
+  color: #fff;
+  background-color: #BD4343;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 4px solid black;
+  cursor:pointer;
+}
+.btn-login2{
+  padding-top:5px;
+  padding: 15px 20px;
+  width: 150px;
+  float: left;
+  margin-left: 5px;
+  text-align: center;
+  color: #fff;
+  background-color:#BD4343;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 4px solid black;
+  cursor:pointer;
+}
+a{
+  text-decoration:none;
+  color:white;
+
+}
+a:hover{
+  color:white;
+  font-weight:bold;
+}
+
+footer{
+	background: #bcbcbc;
+  height:200px;
+	overflow: hidden;
+	opacity: .9;
+	width: 100%;
+  color:white;
+}
+footer p{
+  font-size: 25px;
+  margin:5%;
+}
+
+@media screen and (max-width: 480px) {
+  .name span{
+		font-size: 60px;
+	}
+  .about{
+    font-size: 40px;
+    padding:40px;
+    text-align:center;
+    margin-right: 25px;
+    margin-left: 0 auto;
+    float:none;
+  }
+  .blurb p{
+    font-size: 19px;
+    padding:40px;
+    text-align: justify;
+  text-justify: auto;
+    width: 250px;
+  }
+}
+
+/*.studenth{
+   background-color: #a0859f;
+  transition: background-color 0.3s;
+  float:left;
+  width: 50%;
+  color: white;
+  height: 35%;
+  margin: 0;
+  border:none;
+  outline:none;
+  font-size: 20px;
+}
+.studenth:hover {
+ background-color: #ba8994
+}
+
+.studenth h1{
+  text-align: center;
+}
+
+.lecturerh{
+  background-color: #a4aac1;
+  transition: background-color 0.3s;
+  float:right;
+  width: 50%;
+  color: white;
+  height: 35%;
+  border:none;
+  outline:none;
+  font-size: 20px;
+}
+
+.lecturerh:hover {
+  background-color: #8fadc6;
+}
+
+.lecturerh h1{
+}*/

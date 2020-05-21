@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CampusMeet</title>
+    <link href="css/lecture.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="nav">
+      <div class="link">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+          <li>
+            <div class="dropdown">
+            <a onclick="initScroll('about'); toTop('about'); return false;" href = "#"> NOTIFICATIONS</a>
+            <div class="dropdown-content">
+              <p>Notifications</p>
+              <hr>
+              <p> John Adams sent you a request </p>
+              <p> 21/03/2019 10:30 </p>
+              <hr>
+              <a href="#"> See all</a>
+              </div>
+          </div>
+          </li>
+          <li>
+            <div class="dropdown">
+            <a onclick="initScroll('login'); toTop('login'); return false;" href="#">MEETINGS</a>
+            <div class="dropdown-content">
+              <p>Recent Meetings</p>
+              <hr>
+              <p> You have no meetings </p>
+              <hr>
+              <a href="#"> See all</a>
+              </div>
+          </div>
+          </li>
+          <li><img src="imgs/p.png" alt="user profile icon"/></li>
+          <li>
+            Max Term
+          </li>
+        </ul>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <div class="dashboard">
+          <p class="head"> CampusMeet </p>
+          <div class= "dash">
+          <p>Lecturer Dashboard </p>
+          <div class="search">
+            <input type="text" class="input" placeholder="Search">
+            <div class="close-btn">&times;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="cards">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="user-img"><img src="imgs/p.png" alt="user profile icon"/></div>
+              <span class="username"> Max Term </span>
+              <span class="coursename"> School of Computing DCU </span>
+              <hr class="line">
+              <div class="col-md-9">
+                <span class="code"> <b>Lecturer in:</b> CA </span>
+                <br>
+                <span class="email"> <b>Email:</b> max.term@mail.dcu.ie </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <h3>Meeting Schedule</h3>
+              <hr class="line">
+              <span class="date"><b> 21 May 2019</b></span>
+              <div class="col-md-2">
+                <span class="name"> John Adams </span>
+              </div>
+              <div class="col-md-3">
+                <span class="time"> 10:30am </span>
+              </div>
+              <br>
+              <br>
+              <div class="col-md-2">
+                <span class="name2"> Alan kenny </span>
+              </div>
+              <div class="col-md-3">
+                <span class="time"> 12:10pm </span>
+            </div>
+            <br>
+            <span class="date"><b> 23 May 2019</b></span>
+            <div class="col-md-2">
+              <span class="name"> David kerne </span>
+            </div>
+            <div class="col-md-3">
+              <span class="time"> 1:20pm </span>
+            </div>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <h3>Meeting Requests</h3>
+            <hr class="line">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Student
+                </th>
+                <th>
+                  Date
+                </th>
+                <th>
+                  Time
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td><a href="#form">Jake </a></td>
+                  <td>22/03/2019</td>
+                  <td>10:30am</td>
+              </tr>
+              <tr>
+                <td><a href="#">Sam Grey</a></td>
+                <td>22/03/2019</td>
+                <td>12:00pm</td>
+              </tr>
+              <tr>
+                <td><a href="#">Elle Fitz</a></td>
+                <td>23/03/2019</td>
+                <td>1:10pm</td>
+              </tr>
+              <tr>
+                <td><a href="#">Pete Lyons</a></td>
+                <td>23/03/2019</td>
+                <td>2:30pm</td>
+              </tr>
+              <tr>
+                <td><a href="#">Lydia Weldon</a></td>
+                <td>23/03/2019</td>
+                <td>3:10pm</td>
+              </tr>
+              <tr>
+                <td><a href="#">Steve Martin</a></td>
+                <td>24/03/2019</td>
+                <td>9:20am</td>
+              </tr>
+              <tr>
+                <td><a href="#">Dean O'Reilly</a></td>
+                <td>24/03/2019</td>
+                <td>2:20pm</td>
+              </tr>
+              <tr>
+                <td><a href="#">Kate Keane</a></td>
+                <td>24/03/2019</td>
+                <td>3:00pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c">
+    <div class="form" id="form">
+      <div class="container">
+        <a href="#" class="modal__close">&times;</a>
+      <form>
+        <h2> Accept or Reject the Meeting </h2>
+        <hr>
+        <br>
+            <div class="btn-submit">
+            <a href="#" > Accept</a>
+          </div>
+          <div class="btn-submit2">
+          <a href="#" > Reject</a>
+        </div>
+      </form>
+	</div>
+      </div>
+    </div>
+
+  </body>
+</html>

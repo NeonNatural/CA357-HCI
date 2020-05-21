@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CampusMeet</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div class="nav">
+      <div class="link">
+        <ul>
+          <li>
+            <a onclick="initScroll('about'); toTop('about'); return false;" href = "#"> ABOUT</a>
+          </li>
+          <li>
+            <a onclick="initScroll('login'); toTop('login'); return false;" href="#">LOGIN</a>
+          </li>
+          <li>
+            <a onclick="initScroll('contact'); toTop('contact'); return false;" href="#"> CONTACT </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="landing">
+       <div class="name">
+         <span> CampusMeet </span><br>
+         <p> Scheduling made easier. </p>
+       </div>
+     </div>
+
+    <div class = "container">
+
+      <div id="about">
+      <p class="about"> About.</p>
+        <div class="blurb">
+          <p> CampusMeet makes the scheduling of meetings between lecturer and student simpler! A student can arrange a meeting with a particular lecturer
+             by viewing their available times, while the lecturer can accept or reject the meeting with ease.</p>
+        </div>
+        </div>
+
+        <div id="login"></div>
+          <div class= "login">
+            <p> Login. </p>
+            <div class="info">
+              <img src="imgs/p.png" alt="User profile icon"/>
+              <form>
+                  <div class="form-input">
+                    <input type="text" name="username" placeholder="Enter Username">
+                  </div>
+                  <div class="form-input">
+                    <input type="password" name="password" placeholder="Enter Password">
+                  </div>
+                  <div class="btn-login">
+                    <a href="index2.html">Student login</a>
+                  </div>
+                  <div class="btn-login2">
+                    <a href="index3.html">Lecturer Login</a>
+                  </div>
+              </form><br>
+              <a href="#">Forget Password? </a>
+            </div>
+        </div>
+      </div>
+        <footer>
+          <p> @group 5 project for CA357 </p>
+        </footer>
+
+  </body>
+</html>
